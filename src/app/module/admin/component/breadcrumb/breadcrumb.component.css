@@ -1,0 +1,23 @@
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 7px 10px;
+    list-style: none;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.0625);
+    max-width: 1070px;
+    margin-left: 260px;
+    margin-top: 20px;
+}
+
+li.breadcrumb-item a {
+    font-size: 14px;
+    color: #0a86ac;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.breadcrumb-item a.active {
+    color: #72777a;
+    font-weight: 400;
+}

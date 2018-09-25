@@ -1,0 +1,46 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>      
+      <div class="logo">
+        <img src="../../../../../assets/images/logo.svg" alt="">
+      </div>
+
+    <div class="rightSide">
+        <button mat-icon-button [matMenuTriggerFor]="notification">
+            <i class="material-icons" matBadge="4" matBadgeColor="warn">notifications_none</i>            
+          </button>
+          <mat-menu #notification="matMenu">
+            <button mat-menu-item>              
+              <div class="notification">
+                  <span><span class="fw-500">John Doe</span> <span class="c-grey">liked your post</span></span>
+              </div>
+            </button>
+            <button mat-menu-item>
+                <div class="notification">
+                    <span><span class="fw-500">John Doe</span> <span class="c-grey">liked your post</span></span>
+                </div>
+            </button>
+            <button mat-menu-item>
+                <div class="notification">
+                    <span><span class="fw-500">John Doe</span> <span class="c-grey">liked your post</span></span>
+                </div>
+            </button>
+            <button mat-menu-item class="notiBtn">                
+                <span>View All Notification</span>
+                <i class="material-icons">chevron_right</i>
+              </button>
+          </mat-menu>
+          <!-- notification Close -->
+
+<div [matMenuTriggerFor]="menu" class="userDropDown">
+  <img src="../../../../../assets/images/user.png" alt="">
+</div>
+<mat-menu #menu="matMenu" class="dropdown-menu">
+  <button mat-menu-item>Setting</button>
+  <button mat-menu-item>Profile</button>
+  <button mat-menu-item>Edit Profile</button>
+  <button mat-menu-item>Change Password</button>
+  <button mat-menu-item>Logout</button>
+</mat-menu>
+        
+    </div>
+</mat-toolbar-row>

@@ -1,0 +1,9 @@
+.wrapper{
+    padding-left: 240px;
+    background-color: #f9fafb;
+}
+
+.main-content {
+    padding:20px;
+    min-height: calc(100vh - 61px);
+}

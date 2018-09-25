@@ -1,0 +1,86 @@
+.mat-toolbar.mat-primary{
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+    border-bottom:1px solid rgba(0,0,0,.0625);
+}
+
+.mat-menu-content:not(:empty){
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.mat-toolbar-row, .mat-toolbar-single-row{height: 50px;}
+.logo img {
+    width: 40px;
+}
+
+.mat-toolbar-multiple-rows{
+    min-height: 50px;
+    line-height: 4px;
+}
+
+.notification span {
+    font-size: 13px;
+}
+
+.fw-500 {
+    color: #2e2e2e;
+    font-weight: 500;
+    margin-right: 4px;
+}
+
+.c-grey{
+ color: #7b7b7b;
+}
+
+button.notiBtn {
+    background: #eee;
+    font-size: 15px;
+}
+
+button.notiBtn i{
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+.rightSide{
+    text-align: right;
+    flex: 1;
+}
+
+.mat-badge-medium .mat-badge-content {
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.mat-badge-medium.mat-badge-above .mat-badge-content {
+    top: -5px;
+}
+.mat-badge-medium.mat-badge-overlap.mat-badge-after .mat-badge-content {
+    right: -2px;
+}
+.mat-badge-warn .mat-badge-content {
+    background: #0a86acd9;
+}
+
+.userDropDown{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 10px;
+    cursor: pointer;
+}
+
+.userDropDown img{
+    width: 40px;
+    border-radius: 50%; 
+}
+
+.mat-menu-item{
+    font-size: 14px;        
+    line-height: 25px;
+    height: 40px;
+}
