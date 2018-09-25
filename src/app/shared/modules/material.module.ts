@@ -4,7 +4,8 @@ import { NgModule } from '@angular/core';
 // import { MatFormFieldModule } from '@angular/material/form-field';
 import { CommonModule } from '@angular/common';
 import {
-    
+  // MatSort,
+  // MatTableDataSource,
   MatFormFieldModule,
   MatAutocompleteModule,
   MatBadgeModule,
@@ -44,6 +45,8 @@ import {
 } from "@angular/material";
 
 const modules = [
+  // MatSort,
+  // MatTableDataSource,
   MatFormFieldModule,
   MatAutocompleteModule,
   MatBadgeModule,
@@ -80,7 +83,7 @@ const modules = [
   MatToolbarModule,
   MatTooltipModule,
   MatTreeModule,
-  CommonModule
+  CommonModule,  
 ];
 
 @NgModule({
