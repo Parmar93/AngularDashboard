@@ -1,9 +1,19 @@
 .wrapper{
     padding-left: 240px;
     background-color: #f9fafb;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
 }
 
 .main-content {
     padding:20px;
     min-height: calc(100vh - 61px);
+}
+
+
+.wrapperPadd{
+    padding-left: 50px;
 }

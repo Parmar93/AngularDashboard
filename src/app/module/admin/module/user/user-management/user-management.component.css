@@ -3,3 +3,54 @@
     border: 1px solid rgba(0,0,0,.0625);
     padding: 15px;
 }
+
+.topSection{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;    
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.topSection .col3 {
+    flex: 1;
+}
+
+.topSection .col7 {
+    flex: 10;
+}
+
+.topSection .col2 {
+    flex: 1;
+}
+
+.topSection .col3,
+.topSection .col7,
+.topSection .col2{
+    padding:0 15px
+}
+
+.tableWrapper .totalUser,
+.tableWrapper .mat-paginator{
+    display: inline-block;
+    margin: 15px 0 7px;
+}
+.tableWrapper .mat-paginator{
+    float: right;
+}
+
+
+.totalUser{
+    
+}
+
+.totalUser .text {
+    background: #e2e2e2;
+    padding: 8px;
+    border-radius: 4px 4px 0 0;
+    
+}

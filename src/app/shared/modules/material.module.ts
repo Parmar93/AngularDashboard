@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { MatFormFieldModule } from '@angular/material/form-field';
 import { CommonModule } from '@angular/common';
+
 import {
   // MatSort,
   // MatTableDataSource,
@@ -43,6 +44,7 @@ import {
   MatTooltipModule,
   MatTreeModule
 } from "@angular/material";
+import { UtilityService } from '../../utility.service';
 
 const modules = [
   // MatSort,
@@ -89,5 +91,6 @@ const modules = [
 @NgModule({
   imports: [...modules],
   exports: [...modules],
+  providers: [UtilityService]
 })
 export class MaterialModule { }

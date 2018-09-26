@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { UtilityService } from '../../../utility.service';
+
 
 @Component({
   selector: 'app-dashboard',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+
+  wrapper = false;
+  constructor(private utilityService:UtilityService) { }
 
   ngOnInit() {
+    this.utilityService.sidebar.subscribe(data=>{
+      setTimeout(()=>{
+        this.wrapper = data;
+      },0)
+    })
   }
+
 
 }

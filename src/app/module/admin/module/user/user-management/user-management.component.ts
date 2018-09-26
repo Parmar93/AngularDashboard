@@ -42,9 +42,7 @@ export interface PeriodicElement {
   service_request: number;
   payment: string;
   status: string;
-  action: 
-  
-
+  action: string
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [

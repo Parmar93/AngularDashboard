@@ -195,3 +195,34 @@ li.breadcrumb-item a {
 }
 
 /* breadcrumb css close */
+
+.searchBar{
+    width: 100%;        
+}
+
+.filterIcon{    
+   float: right;
+}
+
+.filterIcon .filter__icon{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    padding: 8px;
+    cursor: pointer;
+    border: 1px solid #0a86ac85;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.filterIcon .filter__icon:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}

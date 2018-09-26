@@ -8,7 +8,8 @@ import { SidebarComponent } from './component/sidebar/sidebar.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { BreadcrumbComponent } from './component/breadcrumb/breadcrumb.component';
-import { SearchbarComponent } from './component/searchbar/searchbar.component';
+import { ModalDialogComponent } from './component/modal-dialog/modal-dialog.component';
+import { FilterComponent } from './component/filter/filter.component';
 
 @NgModule({
   imports: [
@@ -17,7 +18,7 @@ import { SearchbarComponent } from './component/searchbar/searchbar.component';
     AdminRoutingModule,
     UserModule
   ],
-  declarations: [HeaderComponent, SidebarComponent, FooterComponent, DashboardComponent, BreadcrumbComponent, SearchbarComponent]
+  declarations: [HeaderComponent, SidebarComponent, FooterComponent, DashboardComponent, BreadcrumbComponent, ModalDialogComponent, FilterComponent],  
 })
 export class AdminModule { }
 

@@ -2,9 +2,13 @@
 <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="javascript:void(0)">Users</a></li>
 </ol>
-
+<div>
+  
+    
+</div>
 <div class="card">
     <div class="topSection">
+      <div class="col3">
           <mat-form-field>
             <mat-select placeholder="Display 10">
               <mat-option *ngFor="let display of numbers" [value]="display.value">
@@ -12,10 +16,27 @@
               </mat-option>
             </mat-select>
           </mat-form-field>
-          
+        </div>
+        <div class="col7">
+          <div class="searchBar">
+              <app-searchbar></app-searchbar>
+          </div>
+        </div>
+        <div class="col2">
+          <div class="filterIcon">
+            <div class="filter__icon">
+              <img src="../../../../../../assets/images/filter.svg" alt="" width="25">
+            </div>
+          </div>
+        </div>
     </div>
 
 <div class="tableWrapper">
+<div class="totalUser clearfix">
+  <span class="text">Total number of users: 10000</span>
+</div>
+
+<mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
      
         <!-- Position Column -->
@@ -82,6 +103,6 @@
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
       </table>
       
-      <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+      
 </div>
 </div>
